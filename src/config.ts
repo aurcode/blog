@@ -1,6 +1,7 @@
 export default {
-  username: 'varharrie',
-  repo: 'varharrie/varharrie.github.io',
+  username: 'aurcode',
+  repo: 'aurcode/blog',
+  // repo: 'https://github.com/aurcode/blog',
   pageSize: 10,
   // clientId: '',
   // clientSecret: ''

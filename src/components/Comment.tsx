@@ -17,7 +17,7 @@ export default class Comment extends React.Component<ICommentProps, ICommentStat
           <div className='Comment__avatar'>
             <img src={comment.user.avatar_url}/>
           </div>
-          <div className='Comment__user'>{comment.user.login}{comment.author_association === 'OWNER' && <span>作者</span>}</div>
+          <div className='Comment__user'>{comment.user.login}{comment.author_association === 'OWNER' && <span>Author</span>}</div>
           <div className='Comment__date'>{dateUtil.format(comment.created_at, 'YYYY-MM-DD HH:mm:ss')}</div>
         </div>
         <div className='Comment__body'>

@@ -68,7 +68,7 @@ export default class Article extends React.Component<IArticleProps, IArticleStat
                 <span className='Article__tag'>{label.name}</span>
               ))}
             </span>
-            <span className='Article__comments'>评论&nbsp;{article.comments}</span>
+            <span className='Article__comments'>Comments {article.comments}</span>
           </div>
         </div>
         <div className='Article__body'>
@@ -76,7 +76,7 @@ export default class Article extends React.Component<IArticleProps, IArticleStat
         </div>
         <div className='Article__footer'>
           <a href={`${article.html_url}#partial-timeline-marker`}>
-            <div className='Article__reply'>点击评论</div>
+            <div className='Article__reply'>Click to comment</div>
           </a>
           {comments.map((comment) => (
             <Comment comment={comment}/>
